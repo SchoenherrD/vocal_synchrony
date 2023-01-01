@@ -1,0 +1,2 @@
+"ID";"F0_sync_pat_lead";"Range_sync_pat_lead";"Speed_sync_pat_lead";"F0_sync_ther_lead";"Range_sync_ther_lead";"Speed_sync_ther_lead"
+215014103;0.557602197295281;0.367439219872339;0.132260633632925;0.391756701196986;0.304572922594429;0.0667723926319033
