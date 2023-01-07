@@ -1,0 +1,389 @@
+#Batch Processing - extract pitch, transcript for all files in a folder
+
+###as input a folder has to be named, where all .wav, .TextGrid, and .txt files (pitch settings) are stored
+###all three files have to have the same name; only file extension differentiates files
+
+###Set directory
+form set directory
+	comment All files are shored in: (path must end with backslash \)
+	sentence directory
+endform
+
+###standard settings
+time_step=0
+pitch_floor=75
+max_num_can=15
+silence_thresh=0.03
+voicing_thresh=0.45
+octave_cost=0.01
+octave_jump=0.35
+voiced_cost=0.14
+pitch_ceil=400
+
+###lists with all names .wav files; .TextGrid files
+name_sounds = Create Strings as file list: "fileList", directory$ + "\*.wav"
+name_textgrid = Create Strings as file list: "gridList", directory$ + "\*.TextGrid"
+
+###loop through all files in the list
+n = Get number of strings
+######%%%%
+
+###choose file
+for stringCounter from 1 to n
+    select Strings fileList
+    filename$ = Get string... 'stringCounter'
+	appendInfoLine: "Filename " +filename$ 
+    Read from file... 'directory$''filename$'
+    appendInfoLine: "Sound we're working with is: " + filename$
+    namesound$ = filename$ - ".wav"
+    appendInfoLine: "Name of sound we're working with is: " + namesound$
+    select Strings gridList
+    filename2$ = Get string... 'stringCounter'
+    Read from file... 'directory$''filename2$'
+    appendInfoLine: "TextGrid we're working with is: " + filename2$
+    nametextgrid$ = filename2$ - ".TextGrid"
+
+	######## read parameters from .txt file ########
+
+	file$ = directory$ +namesound$+".txt"
+	appendInfoLine: file$
+
+	###check if file exists, if not, take standard pitch settings
+
+	if fileReadable(file$)
+    		parameter=Read Matrix from raw text file: file$
+		voicing_thresh=Get value in cell: 1,1
+     		octave_cost=Get value in cell: 1,2
+     		octave_jump=Get value in cell: 1,3
+		appendInfoLine: "File readable."
+	else
+    		voicing_thresh= 0.45
+		octave_cost= 0.01
+		octave_jump= 0.35
+		appendInfoLine: "File not readable."
+	endif
+
+
+	    voicing_thresh$ = string$: voicing_thresh
+	    octave_cost$ = string$: octave_cost 
+	    octave_jump$ = string$: octave_jump 
+
+##############Extraction of total duration patient speech, therapist speech################
+
+    selectObject: "TextGrid " + nametextgrid$
+    noi = Get number of intervals: 1
+    appendInfoLine: "Noi is 'noi' numbers."
+    total_durationP = 0
+    total_durationT = 0
+
+    ###overall duration of patient speech
+		for i from 1 to noi
+				label$ = Get label of interval: 1, i
+				if label$ = "P"
+					start = Get starting point: 1, i
+					end = Get end point: 1, i
+					duration = end - start
+					total_durationP = total_durationP + duration
+				endif
+
+    ###overall duration of therapist speech
+				if label$ = "T"
+					start = Get starting point: 1, i
+					end = Get end point: 1, i
+					duration = end - start
+					total_durationT = total_durationT + duration
+				endif
+		endfor
+
+    ###write file
+	writeFileLine: "total_speech_duration_"  + namesound$ + ".txt", "The patient speaks 'total_durationP' seconds in total."
+	appendFileLine: "total_speech_duration_"  + namesound$ + ".txt", "The therapist speaks 'total_durationT' seconds in total."
+
+
+##############Extraction of segments with silence (S)################
+
+   writeInfoLine: "silence"
+
+   appendInfoLine: "# # silence # #"
+   selectObject: "TextGrid " + nametextgrid$
+   noi = Get number of intervals: 1
+
+   writeFileLine: "pitch_silence_" + namesound$ + ".txt", "silence_" + namesound$, ";", "nr; start; end"
+  
+   for i from 1 to noi
+		i$ = string$(i)
+		selectObject: "TextGrid " + nametextgrid$
+		label1$ = Get label of interval: 1, i
+
+		if label1$ = "S" or label1$ = " S" or label1$ = "S "
+			start = Get starting point: 1, i
+			start$ = string$: start
+			end = Get end point: 1, i
+			end$ = string$: end
+
+				appendInfoLine: "Start point ", i, " is:" ,start$, "."
+				appendInfoLine: "End point ", i, " is:" ,end$, "."
+				#Tabellenoutput
+				appendFileLine:  "pitch_silence_" + namesound$ + ".txt", "silence_" + namesound$, ";", i$, ";" , start$, ";",  end$
+		endif
+	#endif
+   endfor
+
+##############Extraction of segments with overlapping speech, noise(B)################
+
+   writeInfoLine: "Noise segments"
+
+   appendInfoLine: "# # Noise segments # #"
+   selectObject: "TextGrid " + nametextgrid$
+   noi = Get number of intervals: 1
+
+   writeFileLine: "pitch_noise_segments_" + namesound$ + ".txt", "noise_segments_" + namesound$, ";", "nr; start; end"
+  
+   for i from 1 to noi
+		i$ = string$(i)
+		selectObject: "TextGrid " + nametextgrid$
+		label1$ = Get label of interval: 1, i
+
+		if label1$ = "B" or label1$ = " B" or label1$ = "B "
+			start = Get starting point: 1, i
+			start$ = string$: start
+			end = Get end point: 1, i
+			end$ = string$: end
+
+				appendInfoLine: "Start point ", i, " is:" ,start$, "."
+				appendInfoLine: "End point ", i, " is:" ,end$, "."
+				#Tabellenoutput
+				appendFileLine:  "pitch_noise_segments_" + namesound$ + ".txt", "noise_segments_" + namesound$, ";", i$, ";" , start$, ";",  end$
+		endif
+	#endif
+   endfor
+
+##############Extraction of segments with patient speech (P) and therapist speech (T)################
+
+   writeInfoLine: "pitch"
+
+   ###pitch patient
+   appendInfoLine: "# # patient # #"
+   selectObject: "TextGrid " + nametextgrid$
+   noi = Get number of intervals: 1
+
+   writeFileLine: "pitch_patient_" + namesound$ + ".txt", "pitch_patient_" + namesound$, ";", "nr; start; end; median; min; max; 5%quantile; 95%quantile"
+  
+   selectObject: "Sound " + namesound$
+   #pitch settings 
+   To Pitch (ac): time_step, pitch_floor, max_num_can, "no", silence_thresh, voicing_thresh, octave_cost, octave_jump, voiced_cost, pitch_ceil
+   View & Edit
+
+    total_durationP = 0
+    total_durationT = 0
+
+   ###pitch patient
+   for i from 1 to noi	
+		i$ = string$(i)
+		total_durationP$=string$(total_durationP)
+		total_durationT$=string$(total_durationT)
+		appendInfoLine: "Interval number " + i$ + " with duration patient " + total_durationP$ + " and duration therapist " + total_durationT$ + " is selected."
+		selectObject: "TextGrid " + nametextgrid$
+		label1$ = Get label of interval: 1, i
+
+		if label1$ = "P" or label1$ = " P" or label1$ = "P "
+			start = Get starting point: 1, i
+			end = Get end point: 1, i
+			duration = end - start
+			total_durationP = total_durationP + duration
+		endif
+
+		if label1$ = "T"
+			start = Get starting point: 1, i
+			end = Get end point: 1, i
+			duration = end - start
+			total_durationT = total_durationT + duration
+		endif
+
+		
+		if label1$ = "P" or label1$ = " P" or label1$ = "P "
+			start = Get starting point: 1, i
+			start$ = string$: start
+			end = Get end point: 1, i
+			end$ = string$: end
+			i$ = string$(i)
+
+
+		selectObject: "Pitch " + namesound$
+			unit$ = "Hertz"
+			min_Hz = Get minimum... start end Hertz Parabolic
+			min_Hz$ = string$: min_Hz
+			max_Hz = Get maximum... start end Hertz Parabolic
+			max_Hz$ = string$: max_Hz
+			mean_Hz = Get mean... start end Hertz
+			mean_Hz$ = string$: mean_Hz
+			median_Hz = Get quantile... start end 0.50 Hertz
+			median_Hz$ = string$: median_Hz
+			quantile5_Hz = Get quantile... start end 0.05 Hertz
+			quantile5_Hz$ = string$: quantile5_Hz
+			quantile95_Hz = Get quantile... start end 0.90 Hertz
+ 			quantile95_Hz$ = string$: quantile95_Hz
+
+				appendInfoLine: "median pitch", i, " is:" ,median_Hz$, "."
+				appendInfoLine: "min pitch", i, " is:" ,min_Hz$, "."
+				appendInfoLine: "max pitch", i, " is:" ,max_Hz$, "."
+				appendInfoLine: "5% quantile pitch", i, " is:" ,quantile5_Hz$, "."
+				appendInfoLine: "95% quantile pitch", i, " is:" ,quantile95_Hz$, "."
+				#appendInfoLine: "Start point ", i, " is:" ,start$, "."
+				#appendInfoLine: "End point ", i, " is:" ,end$, "."
+				#Tabellenoutput
+				appendFileLine:  "pitch_patient_" + namesound$ + ".txt", "pitch_patient_" + namesound$, ";", i$, ";" , start$, ";",  end$, ";", median_Hz$,";", min_Hz$,";", max_Hz$,";", quantile5_Hz$,";",quantile95_Hz$
+		endif
+   endfor
+
+   ###pitch therapist
+   appendInfoLine: "# # therapist # #"
+
+    writeFileLine:  "pitch_therapist_" + namesound$ + ".txt", "pitch_therapist_" + namesound$, ";", "nr; start; end; median; min; max; 5%quantile; 95%quantile"
+
+    total_durationP = 0
+    total_durationT = 0
+    for i from 1 to noi
+	selectObject: "TextGrid " + nametextgrid$
+	label1$ = Get label of interval: 1, i	
+		label$ = Get label of interval: 1, i
+		if label1$ = "P" or label1$ = " P" or label1$ = "P "
+			start = Get starting point: 1, i
+			end = Get end point: 1, i
+			duration = end - start
+			total_durationP = total_durationP + duration
+		endif
+
+		if label1$ = "P" or label1$ = " P" or label1$ = "P "
+			start = Get starting point: 1, i
+			end = Get end point: 1, i
+			duration = end - start
+			total_durationP = total_durationP + duration
+		endif
+
+		if label$ = "T"
+			start = Get starting point: 1, i
+			end = Get end point: 1, i
+			duration = end - start
+			total_durationT = total_durationT + duration
+		endif
+
+	if label1$ = "T" or label1$ = " T" or label1$ = "T "
+		start = Get starting point: 1, i
+		start$ = string$: start
+		end = Get end point: 1, i
+		end$ = string$: end
+		i$ = string$(i)
+
+		selectObject: "Pitch " + namesound$
+			unit$ = "Hertz"
+			min_Hz = Get minimum... start end Hertz Parabolic
+			min_Hz$ = string$: min_Hz
+			max_Hz = Get maximum... start end Hertz Parabolic
+			max_Hz$ = string$: max_Hz
+			mean_Hz = Get mean... start end Hertz
+			mean_Hz$ = string$: mean_Hz
+			median_Hz = Get quantile... start end 0.50 Hertz
+			median_Hz$ = string$: median_Hz
+			quantile5_Hz = Get quantile... start end 0.05 Hertz
+			quantile5_Hz$ = string$: quantile5_Hz
+			quantile95_Hz = Get quantile... start end 0.90 Hertz
+ 			quantile95_Hz$ = string$: quantile95_Hz
+
+				appendInfoLine: "median pitch", i, " is:" ,median_Hz$, "."
+				appendInfoLine: "min pitch", i, " is:" ,min_Hz$, "."
+				appendInfoLine: "max pitch", i, " is:" ,max_Hz$, "."
+				appendInfoLine: "5% quantile pitch", i, " is:" ,quantile5_Hz$, "."
+				appendInfoLine: "95% quantile pitch", i, " is:" ,quantile95_Hz$, "."
+				#appendInfoLine: "Start point ", i, " is:" ,start$, "."
+				#appendInfoLine: "End point ", i, " is:" ,end$, ".
+				#Tabellenoutput
+				appendFileLine:  "pitch_therapist_" + namesound$ + ".txt", "pitch_therapist_" + namesound$, ";", i$, ";", start$, ";",  end$, ";", median_Hz$,";", min_Hz$,";", max_Hz$,";", quantile5_Hz$,";",quantile95_Hz$
+
+	endif
+    endfor
+editor: "Pitch " + namesound$
+    Close
+endeditor
+
+##############Extraction of transcripts################
+
+appendInfoLine: "Transcript is computed"
+
+    #patient
+    selectObject:  "TextGrid " + nametextgrid$
+    writeFileLine: "transcript_" + namesound$ + ".txt", "# # text patient # #"
+    noi = Get number of intervals: 2
+
+    total_durationP = 0
+    total_durationT = 0
+
+    for i from 1 to noi
+	i$ = string$(i)
+	total_durationP$ = string$(total_durationP)
+	appendInfoLine: "Duration patient is " +total_durationP$ + "."
+	total_durationT$ = string$(total_durationT)
+	appendInfoLine: "Duration therapistis " +total_durationT$ + "."
+		appendInfoLine: "Praat is using this interval."
+		label1$ = Get label of interval: 1, i
+		if label1$ = "P"
+			start = Get starting point: 1, i
+			end = Get end point: 1, i
+			duration = end - start
+			total_durationP = total_durationP + duration
+			label$ = Get label of interval: 2, i
+			appendFileLine: "transcript_" + namesound$ + ".txt" , i$, ";", "'label$'"
+		endif
+		if label1$ = "T"
+			start = Get starting point: 1, i
+			end = Get end point: 1, i
+			duration = end - start
+			total_durationT = total_durationT + duration
+			label$ = Get label of interval: 2, i
+		endif
+    endfor
+
+    #therapist
+    appendFileLine: "transcript_" + namesound$ + ".txt", "# # text therapist # #"
+
+    total_durationP = 0
+    total_durationT = 0
+
+    for i from 1 to noi
+	i$ = string$(i)	
+		label1$ = Get label of interval: 1, i
+		if label1$ = "P"
+			start = Get starting point: 1, i
+			end = Get end point: 1, i
+			duration = end - start
+			total_durationP = total_durationP + duration
+			label$ = Get label of interval: 2, i
+		endif
+		if label1$ = "T"
+			start = Get starting point: 1, i
+			end = Get end point: 1, i
+			duration = end - start
+			total_durationT = total_durationT + duration
+			label$ = Get label of interval: 2, i
+			appendFileLine: "transcript_" + namesound$ + ".txt" , i$, ";", "'label$'"
+		endif
+    endfor
+
+
+########################################
+
+###clear workspace ###CAVE: very important!
+removeObject: "Pitch " + namesound$
+removeObject: "Sound " + namesound$
+removeObject: "TextGrid " + namesound$
+if fileReadable(file$)
+	removeObject: "Matrix " + namesound$
+endif
+
+########################################
+endfor 
+# end loop files
+
+
+appendInfoLine: "Calculation complete!"
+
