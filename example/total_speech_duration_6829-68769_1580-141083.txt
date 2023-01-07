@@ -1,0 +1,2 @@
+The patient speaks 208.02836156515832 seconds in total.
+The therapist speaks 222.26881081499945 seconds in total.

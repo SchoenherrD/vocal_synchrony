@@ -1,0 +1,948 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0 
+xmax = 500 
+tiers? <exists> 
+size = 2 
+item []: 
+    item [1]:
+        class = "IntervalTier" 
+        name = "Speaker" 
+        xmin = 0 
+        xmax = 500 
+        intervals: size = 116 
+        intervals [1]:
+            xmin = 0 
+            xmax = 11.401419623986683 
+            text = " P" 
+        intervals [2]:
+            xmin = 11.401419623986683 
+            xmax = 19.31336206032862 
+            text = "T" 
+        intervals [3]:
+            xmin = 19.31336206032862 
+            xmax = 28.1278183462268 
+            text = "P" 
+        intervals [4]:
+            xmin = 28.1278183462268 
+            xmax = 37.65762943071107 
+            text = "T" 
+        intervals [5]:
+            xmin = 37.65762943071107 
+            xmax = 40.335246792940495 
+            text = "P" 
+        intervals [6]:
+            xmin = 40.335246792940495 
+            xmax = 45.819473887828245 
+            text = "T" 
+        intervals [7]:
+            xmin = 45.819473887828245 
+            xmax = 49.778932480544555 
+            text = "P" 
+        intervals [8]:
+            xmin = 49.778932480544555 
+            xmax = 55.6824714181486 
+            text = "T" 
+        intervals [9]:
+            xmin = 55.6824714181486 
+            xmax = 62.33619758436894 
+            text = "P" 
+        intervals [10]:
+            xmin = 62.33619758436894 
+            xmax = 65.98076838817431 
+            text = "T" 
+        intervals [11]:
+            xmin = 65.98076838817431 
+            xmax = 71.94808719506567 
+            text = "P" 
+        intervals [12]:
+            xmin = 71.94808719506567 
+            xmax = 73.96689625887899 
+            text = "T" 
+        intervals [13]:
+            xmin = 73.96689625887899 
+            xmax = 80.89520510311982 
+            text = "P" 
+        intervals [14]:
+            xmin = 80.89520510311982 
+            xmax = 91.07234390447786 
+            text = "T" 
+        intervals [15]:
+            xmin = 91.07234390447786 
+            xmax = 94.375589265599 
+            text = "P" 
+        intervals [16]:
+            xmin = 94.375589265599 
+            xmax = 98.36580986381168 
+            text = "T" 
+        intervals [17]:
+            xmin = 98.36580986381168 
+            xmax = 102.54311939588726 
+            text = "P" 
+        intervals [18]:
+            xmin = 102.54311939588726 
+            xmax = 106.4592755067777 
+            text = "T" 
+        intervals [19]:
+            xmin = 106.4592755067777 
+            xmax = 110.06799576460605 
+            text = "P" 
+        intervals [20]:
+            xmin = 110.06799576460605 
+            xmax = 116.33075474659674 
+            text = "T" 
+        intervals [21]:
+            xmin = 116.33075474659674 
+            xmax = 119.13207708658555 
+            text = "P" 
+        intervals [22]:
+            xmin = 119.13207708658555 
+            xmax = 124.13350837140932 
+            text = "T" 
+        intervals [23]:
+            xmin = 124.13350837140932 
+            xmax = 128.42397356321587 
+            text = "P" 
+        intervals [24]:
+            xmin = 128.42397356321587 
+            xmax = 130.53542877705306 
+            text = "T" 
+        intervals [25]:
+            xmin = 130.53542877705306 
+            xmax = 134.24471615757201 
+            text = "P" 
+        intervals [26]:
+            xmin = 134.24471615757201 
+            xmax = 140.85013395396516 
+            text = "T" 
+        intervals [27]:
+            xmin = 140.85013395396516 
+            xmax = 142.9167352900769 
+            text = "P" 
+        intervals [28]:
+            xmin = 142.9167352900769 
+            xmax = 146.46175746488777 
+            text = "T" 
+        intervals [29]:
+            xmin = 146.46175746488777 
+            xmax = 149.47783211094807 
+            text = "P" 
+        intervals [30]:
+            xmin = 149.47783211094807 
+            xmax = 151.64870861679046 
+            text = "T" 
+        intervals [31]:
+            xmin = 151.64870861679046 
+            xmax = 157.705932490128 
+            text = "P" 
+        intervals [32]:
+            xmin = 157.705932490128 
+            xmax = 160.62199083658547 
+            text = "T" 
+        intervals [33]:
+            xmin = 160.62199083658547 
+            xmax = 161.83885581508636 
+            text = "P" 
+        intervals [34]:
+            xmin = 161.83885581508636 
+            xmax = 164.9289294668737 
+            text = "T" 
+        intervals [35]:
+            xmin = 164.9289294668737 
+            xmax = 167.6040990301473 
+            text = "P" 
+        intervals [36]:
+            xmin = 167.6040990301473 
+            xmax = 168.66538309815493 
+            text = "P" 
+        intervals [37]:
+            xmin = 168.66538309815493 
+            xmax = 172.04262771500314 
+            text = "T" 
+        intervals [38]:
+            xmin = 172.04262771500314 
+            xmax = 173.33234274234465 
+            text = "P" 
+        intervals [39]:
+            xmin = 173.33234274234465 
+            xmax = 179.83029230328617 
+            text = "T" 
+        intervals [40]:
+            xmin = 179.83029230328617 
+            xmax = 181.95739840669438 
+            text = "P" 
+        intervals [41]:
+            xmin = 181.95739840669438 
+            xmax = 184.4195269738244 
+            text = "T" 
+        intervals [42]:
+            xmin = 184.4195269738244 
+            xmax = 186.46986111568208 
+            text = "P" 
+        intervals [43]:
+            xmin = 186.46986111568208 
+            xmax = 190.9287199201344 
+            text = "T" 
+        intervals [44]:
+            xmin = 190.9287199201344 
+            xmax = 195.42830444537464 
+            text = "P" 
+        intervals [45]:
+            xmin = 195.42830444537464 
+            xmax = 202.67663717971794 
+            text = "T" 
+        intervals [46]:
+            xmin = 202.67663717971794 
+            xmax = 205.71914922955148 
+            text = "P" 
+        intervals [47]:
+            xmin = 205.71914922955148 
+            xmax = 209.57559440172957 
+            text = "T" 
+        intervals [48]:
+            xmin = 209.57559440172957 
+            xmax = 211.99516675490707 
+            text = "P" 
+        intervals [49]:
+            xmin = 211.99516675490707 
+            xmax = 216.62369884208175 
+            text = "T" 
+        intervals [50]:
+            xmin = 216.62369884208175 
+            xmax = 219.4515353473927 
+            text = "P" 
+        intervals [51]:
+            xmin = 219.4515353473927 
+            xmax = 223.84113960773846 
+            text = "T" 
+        intervals [52]:
+            xmin = 223.84113960773846 
+            xmax = 227.7764766313388 
+            text = "P" 
+        intervals [53]:
+            xmin = 227.7764766313388 
+            xmax = 233.08913496874425 
+            text = "T" 
+        intervals [54]:
+            xmin = 233.08913496874425 
+            xmax = 236.63496889302363 
+            text = "P" 
+        intervals [55]:
+            xmin = 236.63496889302363 
+            xmax = 240.98073776934007 
+            text = "T" 
+        intervals [56]:
+            xmin = 240.98073776934007 
+            xmax = 244.88022424696337 
+            text = "P" 
+        intervals [57]:
+            xmin = 244.88022424696337 
+            xmax = 247.19618479580393 
+            text = "T" 
+        intervals [58]:
+            xmin = 247.19618479580393 
+            xmax = 251.34866639007367 
+            text = "P" 
+        intervals [59]:
+            xmin = 251.34866639007367 
+            xmax = 251.77373566338562 
+            text = "B" 
+        intervals [60]:
+            xmin = 251.77373566338562 
+            xmax = 254.54325440967327 
+            text = "T" 
+        intervals [61]:
+            xmin = 254.54325440967327 
+            xmax = 256.61208842796276 
+            text = "P" 
+        intervals [62]:
+            xmin = 256.61208842796276 
+            xmax = 258.30382961007047 
+            text = "T" 
+        intervals [63]:
+            xmin = 258.30382961007047 
+            xmax = 267.97336949597036 
+            text = "P" 
+        intervals [64]:
+            xmin = 267.97336949597036 
+            xmax = 272.0742027184353 
+            text = "T" 
+        intervals [65]:
+            xmin = 272.0742027184353 
+            xmax = 272.66457670914633 
+            text = "B" 
+        intervals [66]:
+            xmin = 272.66457670914633 
+            xmax = 275.2996233987506 
+            text = "P" 
+        intervals [67]:
+            xmin = 275.2996233987506 
+            xmax = 280.5646546526071 
+            text = "T" 
+        intervals [68]:
+            xmin = 280.5646546526071 
+            xmax = 286.1738313656821 
+            text = "P" 
+        intervals [69]:
+            xmin = 286.1738313656821 
+            xmax = 291.6093479017295 
+            text = "T" 
+        intervals [70]:
+            xmin = 291.6093479017295 
+            xmax = 295.0087531313388 
+            text = "P" 
+        intervals [71]:
+            xmin = 295.0087531313388 
+            xmax = 298.475984850903 
+            text = "T" 
+        intervals [72]:
+            xmin = 298.475984850903 
+            xmax = 305.57680491528487 
+            text = "P" 
+        intervals [73]:
+            xmin = 305.57680491528487 
+            xmax = 311.2785459921138 
+            text = "T" 
+        intervals [74]:
+            xmin = 311.2785459921138 
+            xmax = 317.8661454483534 
+            text = "P" 
+        intervals [75]:
+            xmin = 317.8661454483534 
+            xmax = 320.28767875788594 
+            text = "T" 
+        intervals [76]:
+            xmin = 320.28767875788594 
+            xmax = 324.9996232429914 
+            text = "P" 
+        intervals [77]:
+            xmin = 324.9996232429914 
+            xmax = 329.57382282864165 
+            text = "T" 
+        intervals [78]:
+            xmin = 329.57382282864165 
+            xmax = 333.27157717708513 
+            text = "P" 
+        intervals [79]:
+            xmin = 333.27157717708513 
+            xmax = 335.1651159699679 
+            text = "T" 
+        intervals [80]:
+            xmin = 335.1651159699679 
+            xmax = 340.3017977956885 
+            text = "P" 
+        intervals [81]:
+            xmin = 340.3017977956885 
+            xmax = 342.24541021996794 
+            text = "T" 
+        intervals [82]:
+            xmin = 342.24541021996794 
+            xmax = 349.2670772565468 
+            text = "P" 
+        intervals [83]:
+            xmin = 349.2670772565468 
+            xmax = 352.61146844835343 
+            text = "T" 
+        intervals [84]:
+            xmin = 352.61146844835343 
+            xmax = 355.85163203114024 
+            text = "P" 
+        intervals [85]:
+            xmin = 355.85163203114024 
+            xmax = 360.43083725479164 
+            text = "T" 
+        intervals [86]:
+            xmin = 360.43083725479164 
+            xmax = 363.4154036274823 
+            text = "P" 
+        intervals [87]:
+            xmin = 363.4154036274823 
+            xmax = 365.2879310144906 
+            text = "T" 
+        intervals [88]:
+            xmin = 365.2879310144906 
+            xmax = 367.94093996500305 
+            text = "P" 
+        intervals [89]:
+            xmin = 367.94093996500305 
+            xmax = 369.56545279095445 
+            text = "T" 
+        intervals [90]:
+            xmin = 369.56545279095445 
+            xmax = 374.6051629987184 
+            text = "P" 
+        intervals [91]:
+            xmin = 374.6051629987184 
+            xmax = 376.60123012064685 
+            text = "T" 
+        intervals [92]:
+            xmin = 376.60123012064685 
+            xmax = 378.5478872265725 
+            text = "P" 
+        intervals [93]:
+            xmin = 378.5478872265725 
+            xmax = 381.00262858944893 
+            text = "T" 
+        intervals [94]:
+            xmin = 381.00262858944893 
+            xmax = 385.6626839229156 
+            text = "P" 
+        intervals [95]:
+            xmin = 385.6626839229156 
+            xmax = 387.367916452736 
+            text = "T" 
+        intervals [96]:
+            xmin = 387.367916452736 
+            xmax = 391.02063793507534 
+            text = "P" 
+        intervals [97]:
+            xmin = 391.02063793507534 
+            xmax = 393.08116374761147 
+            text = "T" 
+        intervals [98]:
+            xmin = 393.08116374761147 
+            xmax = 395.82948543985236 
+            text = "P" 
+        intervals [99]:
+            xmin = 395.82948543985236 
+            xmax = 397.86362232317606 
+            text = "T" 
+        intervals [100]:
+            xmin = 397.86362232317606 
+            xmax = 399.92266844723514 
+            text = "P" 
+        intervals [101]:
+            xmin = 399.92266844723514 
+            xmax = 405.97831144332656 
+            text = "T" 
+        intervals [102]:
+            xmin = 405.97831144332656 
+            xmax = 407.75748367827157 
+            text = "P" 
+        intervals [103]:
+            xmin = 407.75748367827157 
+            xmax = 407.94187586848585 
+            text = "B" 
+        intervals [104]:
+            xmin = 407.94187586848585 
+            xmax = 415.1041998201361 
+            text = "T" 
+        intervals [105]:
+            xmin = 415.1041998201361 
+            xmax = 418.1345580866387 
+            text = "P" 
+        intervals [106]:
+            xmin = 418.1345580866387 
+            xmax = 420.22604986964393 
+            text = "T" 
+        intervals [107]:
+            xmin = 420.22604986964393 
+            xmax = 422.7899793716706 
+            text = "P" 
+        intervals [108]:
+            xmin = 422.7899793716706 
+            xmax = 425.80315122922707 
+            text = "T" 
+        intervals [109]:
+            xmin = 425.80315122922707 
+            xmax = 427.15975091437474 
+            text = "P" 
+        intervals [110]:
+            xmin = 427.15975091437474 
+            xmax = 427.46268094115527 
+            text = "B" 
+        intervals [111]:
+            xmin = 427.46268094115527 
+            xmax = 431.40668770577594 
+            text = "T" 
+        intervals [112]:
+            xmin = 431.40668770577594 
+            xmax = 433.9456612793138 
+            text = "P" 
+        intervals [113]:
+            xmin = 433.9456612793138 
+            xmax = 434.3232262402287 
+            text = "B" 
+        intervals [114]:
+            xmin = 434.3232262402287 
+            xmax = 440.216569060582 
+            text = "T" 
+        intervals [115]:
+            xmin = 440.216569060582 
+            xmax = 443.5789224460771 
+            text = "P" 
+        intervals [116]:
+            xmin = 443.5789224460771 
+            xmax = 500 
+            text = "" 
+    item [2]:
+        class = "IntervalTier" 
+        name = "Text" 
+        xmin = 0 
+        xmax = 500 
+        intervals: size = 116 
+        intervals [1]:
+            xmin = 0 
+            xmax = 11.401419623986683 
+            text = "KENNETH AND BETH REFRAINED FROM TELLING THE OTHER GIRLS OR UNCLE JOHN OF OLD WILL ROGERS'S VISIT BUT THEY GOT MISTER WATSON IN THE LIBRARY AND QUESTIONED HIM CLOSELY ABOUT THE PENALTY FOR FORGING A CHECK" 
+        intervals [2]:
+            xmin = 11.401419623986683 
+            xmax = 19.31336206032862 
+            text = "I WILL ENDEAVOUR IN MY STATEMENT TO AVOID SUCH TERMS AS WOULD SERVE TO LIMIT THE EVENTS TO ANY PARTICULAR PLACE OR GIVE A CLUE AS TO THE PEOPLE CONCERNED" 
+        intervals [3]:
+            xmin = 19.31336206032862 
+            xmax = 28.1278183462268 
+            text = "IT WAS A SERIOUS CRIME INDEED MISTER WATSON TOLD THEM AND TOM GATES BADE FAIR TO SERVE A LENGTHY TERM IN STATE'S PRISON AS A CONSEQUENCE OF HIS RASH ACT" 
+        intervals [4]:
+            xmin = 28.1278183462268 
+            xmax = 37.65762943071107 
+            text = "I HAD ALWAYS KNOWN HIM TO BE RESTLESS IN HIS MANNER BUT ON THIS PARTICULAR OCCASION HE WAS IN SUCH A STATE OF UNCONTROLLABLE AGITATION THAT IT WAS CLEAR SOMETHING VERY UNUSUAL HAD OCCURRED" 
+        intervals [5]:
+            xmin = 37.65762943071107 
+            xmax = 40.335246792940495 
+            text = "I CAN'T SEE IT IN THAT LIGHT SAID THE OLD LAWYER" 
+        intervals [6]:
+            xmin = 40.335246792940495 
+            xmax = 45.819473887828245 
+            text = "MY FRIEND'S TEMPER HAD NOT IMPROVED SINCE HE HAD BEEN DEPRIVED OF THE CONGENIAL SURROUNDINGS OF BAKER STREET" 
+        intervals [7]:
+            xmin = 45.819473887828245 
+            xmax = 49.778932480544555 
+            text = "IT WAS A DELIBERATE THEFT FROM HIS EMPLOYERS TO PROTECT A GIRL HE LOVED" 
+        intervals [8]:
+            xmin = 49.778932480544555 
+            xmax = 55.6824714181486 
+            text = "WITHOUT HIS SCRAPBOOKS HIS CHEMICALS AND HIS HOMELY UNTIDINESS HE WAS AN UNCOMFORTABLE MAN" 
+        intervals [9]:
+            xmin = 55.6824714181486 
+            xmax = 62.33619758436894 
+            text = "BUT THEY COULD NOT HAVE PROVEN A CASE AGAINST LUCY IF SHE WAS INNOCENT AND ALL THEIR THREATS OF ARRESTING HER WERE PROBABLY MERE BLUFF" 
+        intervals [10]:
+            xmin = 62.33619758436894 
+            xmax = 65.98076838817431 
+            text = "I HAD TO READ IT OVER CAREFULLY AS THE TEXT MUST BE ABSOLUTELY CORRECT" 
+        intervals [11]:
+            xmin = 65.98076838817431 
+            xmax = 71.94808719506567 
+            text = "HE WAS SOFT HEARTED AND IMPETUOUS SAID BETH AND BEING IN LOVE HE DIDN'T STOP TO COUNT THE COST" 
+        intervals [12]:
+            xmin = 71.94808719506567 
+            xmax = 73.96689625887899 
+            text = "I WAS ABSENT RATHER MORE THAN AN HOUR" 
+        intervals [13]:
+            xmin = 73.96689625887899 
+            xmax = 80.89520510311982 
+            text = "IF THE PROSECUTION WERE WITHDRAWN AND THE CASE SETTLED WITH THE VICTIM OF THE FORGED CHECK THEN THE YOUNG MAN WOULD BE ALLOWED HIS FREEDOM" 
+        intervals [14]:
+            xmin = 80.89520510311982 
+            xmax = 91.07234390447786 
+            text = "THE ONLY DUPLICATE WHICH EXISTED SO FAR AS I KNEW WAS THAT WHICH BELONGED TO MY SERVANT BANNISTER A MAN WHO HAS LOOKED AFTER MY ROOM FOR TEN YEARS AND WHOSE HONESTY IS ABSOLUTELY ABOVE SUSPICION" 
+        intervals [15]:
+            xmin = 91.07234390447786 
+            xmax = 94.375589265599 
+            text = "BUT UNDER THE CIRCUMSTANCES I DOUBT IF SUCH AN ARRANGEMENT COULD BE MADE" 
+        intervals [16]:
+            xmin = 94.375589265599 
+            xmax = 98.36580986381168 
+            text = "THE MOMENT I LOOKED AT MY TABLE I WAS AWARE THAT SOMEONE HAD RUMMAGED AMONG MY PAPERS" 
+        intervals [17]:
+            xmin = 98.36580986381168 
+            xmax = 102.54311939588726 
+            text = "FAIRVIEW WAS TWELVE MILES AWAY BUT BY TEN O'CLOCK THEY DREW UP AT THE COUNTY JAIL" 
+        intervals [18]:
+            xmin = 102.54311939588726 
+            xmax = 106.4592755067777 
+            text = "THE PROOF WAS IN THREE LONG SLIPS I HAD LEFT THEM ALL TOGETHER" 
+        intervals [19]:
+            xmin = 106.4592755067777 
+            xmax = 110.06799576460605 
+            text = "THEY WERE RECEIVED IN THE LITTLE OFFICE BY A MAN NAMED MARKHAM WHO WAS THE JAILER" 
+        intervals [20]:
+            xmin = 110.06799576460605 
+            xmax = 116.33075474659674 
+            text = "THE ALTERNATIVE WAS THAT SOMEONE PASSING HAD OBSERVED THE KEY IN THE DOOR HAD KNOWN THAT I WAS OUT AND HAD ENTERED TO LOOK AT THE PAPERS" 
+        intervals [21]:
+            xmin = 116.33075474659674 
+            xmax = 119.13207708658555 
+            text = "WE WISH TO TALK WITH HIM ANSWERED KENNETH TALK" 
+        intervals [22]:
+            xmin = 119.13207708658555 
+            xmax = 124.13350837140932 
+            text = "I GAVE HIM A LITTLE BRANDY AND LEFT HIM COLLAPSED IN A CHAIR WHILE I MADE A MOST CAREFUL EXAMINATION OF THE ROOM" 
+        intervals [23]:
+            xmin = 124.13350837140932 
+            xmax = 128.42397356321587 
+            text = "I'M RUNNING FOR REPRESENTATIVE ON THE REPUBLICAN TICKET SAID KENNETH QUIETLY" 
+        intervals [24]:
+            xmin = 128.42397356321587 
+            xmax = 130.53542877705306 
+            text = "A BROKEN TIP OF LEAD WAS LYING THERE ALSO" 
+        intervals [25]:
+            xmin = 130.53542877705306 
+            xmax = 134.24471615757201 
+            text = "OH SAY THAT'S DIFFERENT OBSERVED MARKHAM ALTERING HIS DEMEANOR" 
+        intervals [26]:
+            xmin = 134.24471615757201 
+            xmax = 140.85013395396516 
+            text = "NOT ONLY THIS BUT ON THE TABLE I FOUND A SMALL BALL OF BLACK DOUGH OR CLAY WITH SPECKS OF SOMETHING WHICH LOOKS LIKE SAWDUST IN IT" 
+        intervals [27]:
+            xmin = 140.85013395396516 
+            xmax = 142.9167352900769 
+            text = " MAY WE SEE GATES AT ONCE ASKED KENNETH" 
+        intervals [28]:
+            xmin = 142.9167352900769 
+            xmax = 146.46175746488777 
+            text = "ABOVE ALL THINGS I DESIRE TO SETTLE THE MATTER QUIETLY AND DISCREETLY ! THEY FOLLOWED THE JAILER ALONG A SUCCESSION OF PASSAGES ! TO THE BEST OF MY BELIEF THEY WERE ROLLED UP" 
+        intervals [29]:
+            xmin = 146.46175746488777 
+            xmax = 149.47783211094807 
+            text = "THEY FOLLOWED THE JAILER ALONG A SUCCESSION OF PASSAGES " 
+        intervals [30]:
+            xmin = 149.47783211094807 
+            xmax = 151.64870861679046 
+            text = "TO THE BEST OF MY BELIEF THEY WERE ROLLED UP" 
+        intervals [31]:
+            xmin = 151.64870861679046 
+            xmax = 157.705932490128 
+            text = "SOMETIMES I AM THAT YEARNING FOR A SMOKE I AM NEARLY CRAZY AN I DO NOT KNOW WHICH IS WORST DYING ONE WAY OR ANOTHER" 
+        intervals [32]:
+            xmin = 157.705932490128 
+            xmax = 160.62199083658547 
+            text = "DID ANYONE KNOW THAT THESE PROOFS WOULD BE THERE " 
+        intervals [33]:
+            xmin = 160.62199083658547 
+            xmax = 161.83885581508636 
+            text = "NO ONE SAVE THE PRINTER" 
+        intervals [34]:
+            xmin = 161.83885581508636 
+            xmax = 164.9289294668737 
+            text = "HE UNLOCKED THE DOOR AND CALLED HERE IS VISITORS TOM" 
+        intervals [35]:
+            xmin = 164.9289294668737 
+            xmax = 167.6040990301473 
+            text = "I WAS IN SUCH A HURRY TO COME TO YOU" 
+        intervals [36]:
+            xmin = 167.6040990301473 
+            xmax = 168.66538309815493 
+            text = "YOU LEFT YOUR DOOR OPEN" 
+        intervals [37]:
+            xmin = 168.66538309815493 
+            xmax = 172.04262771500314 
+            text = "WORSE TOM WORSE N EVER REPLIED THE JAILER GLOOMILY" 
+        intervals [38]:
+            xmin = 172.04262771500314 
+            xmax = 173.33234274234465 
+            text = "SO IT SEEMS TO ME" 
+        intervals [39]:
+            xmin = 173.33234274234465 
+            xmax = 179.83029230328617 
+            text = "MISS DE GRAF SAID KENNETH NOTICING THE BOY'S FACE CRITICALLY AS HE STOOD WHERE THE LIGHT FROM THE PASSAGE FELL UPON IT" 
+        intervals [40]:
+            xmin = 179.83029230328617 
+            xmax = 181.95739840669438 
+            text = "NOW MISTER SOAMES AT YOUR DISPOSAL" 
+        intervals [41]:
+            xmin = 181.95739840669438 
+            xmax = 184.4195269738244 
+            text = "SORRY WE HAVE NOT ANY RECEPTION ROOM IN THE JAIL" 
+        intervals [42]:
+            xmin = 184.4195269738244 
+            xmax = 186.46986111568208 
+            text = "ABOVE WERE THREE STUDENTS ONE ON EACH STORY" 
+        intervals [43]:
+            xmin = 186.46986111568208 
+            xmax = 190.9287199201344 
+            text = "SIT DOWN PLEASE SAID GATES IN A CHEERFUL AND PLEASANT VOICE THERE IS A BENCH HERE" 
+        intervals [44]:
+            xmin = 190.9287199201344 
+            xmax = 195.42830444537464 
+            text = "THEN HE APPROACHED IT AND STANDING ON TIPTOE WITH HIS NECK CRANED HE LOOKED INTO THE ROOM" 
+        intervals [45]:
+            xmin = 195.42830444537464 
+            xmax = 202.67663717971794 
+            text = "A FRESH WHOLESOME LOOKING BOY WAS TOM GATES WITH STEADY GRAY EYES AN INTELLIGENT FOREHEAD BUT A SENSITIVE RATHER WEAK MOUTH" 
+        intervals [46]:
+            xmin = 202.67663717971794 
+            xmax = 205.71914922955148 
+            text = "THERE IS NO OPENING EXCEPT THE ONE PANE SAID OUR LEARNED GUIDE " 
+        intervals [47]:
+            xmin = 205.71914922955148 
+            xmax = 209.57559440172957 
+            text = "WE HAVE HEARD SOMETHING OF YOUR STORY SAID KENNETH AND ARE INTERESTED IN IT" 
+        intervals [48]:
+            xmin = 209.57559440172957 
+            xmax = 211.99516675490707 
+            text = "I AM AFRAID THERE ARE NO SIGNS HERE SAID HE" 
+        intervals [49]:
+            xmin = 211.99516675490707 
+            xmax = 216.62369884208175 
+            text = " I DID NOT STOP TO THINK WHETHER IT WAS FOOLISH OR NOT I DID IT AND I AM GLAD I DID" 
+        intervals [50]:
+            xmin = 216.62369884208175 
+            xmax = 219.4515353473927 
+            text = "ONE COULD HARDLY HOPE FOR ANY UPON SO DRY A DAY" 
+        intervals [51]:
+            xmin = 219.4515353473927 
+            xmax = 223.84113960773846 
+            text = "OLD WILL IS A FINE FELLOW BUT POOR AND HELPLESS SINCE MISSUS ROGERS HAD HER ACCIDENT" 
+        intervals [52]:
+            xmin = 223.84113960773846 
+            xmax = 227.7764766313388 
+            text = "YOU LEFT HIM IN A CHAIR YOU SAY WHICH CHAIR BY THE WINDOW THERE" 
+        intervals [53]:
+            xmin = 227.7764766313388 
+            xmax = 233.08913496874425 
+            text = "THEN ROGERS WOULDN'T DO ANYTHING BUT LEAD HER AROUND AND WAIT UPON HER AND THE PLACE WENT TO RACK AND RUIN" 
+        intervals [54]:
+            xmin = 233.08913496874425 
+            xmax = 236.63496889302363 
+            text = "THE MAN ENTERED AND TOOK THE PAPERS SHEET BY SHEET FROM THE CENTRAL TABLE" 
+        intervals [55]:
+            xmin = 236.63496889302363 
+            xmax = 240.98073776934007 
+            text = "HE SPOKE SIMPLY BUT PACED UP AND DOWN THE NARROW CELL IN FRONT OF THEM" 
+        intervals [56]:
+            xmin = 240.98073776934007 
+            xmax = 244.88022424696337 
+            text = "AS A MATTER OF FACT HE COULD NOT SAID SOAMES FOR I ENTERED BY THE SIDE DOOR" 
+        intervals [57]:
+            xmin = 244.88022424696337 
+            xmax = 247.19618479580393 
+            text = "WHOSE NAME DID YOU SIGN TO THE CHECK ASKED KENNETH" 
+        intervals [58]:
+            xmin = 247.19618479580393 
+            xmax = 251.34866639007367 
+            text = "HOW LONG WOULD IT TAKE HIM TO DO THAT USING EVERY POSSIBLE CONTRACTION A QUARTER OF AN HOUR NOT LESS" 
+        intervals [59]:
+            xmin = 251.34866639007367 
+            xmax = 251.77373566338562 
+            text = "" 
+        intervals [60]:
+            xmin = 251.77373566338562 
+            xmax = 254.54325440967327 
+            text = "IS SUPPOSED TO SIGN ALL THE CHECKS OF THE CONCERN" 
+        intervals [61]:
+            xmin = 254.54325440967327 
+            xmax = 256.61208842796276 
+            text = "THEN HE TOSSED IT DOWN AND SEIZED THE NEXT" 
+        intervals [62]:
+            xmin = 256.61208842796276 
+            xmax = 258.30382961007047 
+            text = "IT'S A STOCK COMPANY AND RICH" 
+        intervals [63]:
+            xmin = 258.30382961007047 
+            xmax = 267.97336949597036 
+            text = "HE WAS IN THE MIDST OF THAT WHEN YOUR RETURN CAUSED HIM TO MAKE A VERY HURRIED RETREAT VERY HURRIED SINCE HE HAD NOT TIME TO REPLACE THE PAPERS WHICH WOULD TELL YOU THAT HE HAD BEEN THERE" 
+        intervals [64]:
+            xmin = 267.97336949597036 
+            xmax = 272.0742027184353 
+            text = "I WAS BOOKKEEPER SO IT WAS EASY TO GET A BLANK CHECK AND FORGE THE SIGNATURE" 
+        intervals [65]:
+            xmin = 272.0742027184353 
+            xmax = 272.66457670914633 
+            text = "" 
+        intervals [66]:
+            xmin = 272.66457670914633 
+            xmax = 275.2996233987506 
+            text = "SOAMES WAS SOMEWHAT OVERWHELMED BY THIS FLOOD OF INFORMATION" 
+        intervals [67]:
+            xmin = 275.2996233987506 
+            xmax = 280.5646546526071 
+            text = "AS REGARDS MY ROBBING THE COMPANY I WILL SAY THAT I SAVED THEM A HEAVY LOSS ONE DAY" 
+        intervals [68]:
+            xmin = 280.5646546526071 
+            xmax = 286.1738313656821 
+            text = "HOLMES HELD OUT A SMALL CHIP WITH THE LETTERS N N AND A SPACE OF CLEAR WOOD AFTER THEM YOU SEE" 
+        intervals [69]:
+            xmin = 286.1738313656821 
+            xmax = 291.6093479017295 
+            text = "I DISCOVERED AND PUT OUT A FIRE THAT WOULD HAVE DESTROYED THE WHOLE PLANT BUT MARSHALL NEVER EVEN THANKED ME" 
+        intervals [70]:
+            xmin = 291.6093479017295 
+            xmax = 295.0087531313388 
+            text = "WATSON I HAVE ALWAYS DONE YOU AN INJUSTICE THERE ARE OTHERS" 
+        intervals [71]:
+            xmin = 295.0087531313388 
+            xmax = 298.475984850903 
+            text = "IT WAS BETTER FOR HIM TO THINK THE GIRL UNFEELING THAN TO KNOW THE TRUTH" 
+        intervals [72]:
+            xmin = 298.475984850903 
+            xmax = 305.57680491528487 
+            text = "I WAS HOPING THAT IF THE PAPER ON WHICH HE WROTE WAS THIN SOME TRACE OF IT MIGHT COME THROUGH UPON THIS POLISHED SURFACE NO I SEE NOTHING" 
+        intervals [73]:
+            xmin = 305.57680491528487 
+            xmax = 311.2785459921138 
+            text = "I'M GOING TO SEE MISTER MARSHALL SAID KENNETH AND DISCOVER WHAT I CAN DO TO ASSIST YOU THANK YOU SIR" 
+        intervals [74]:
+            xmin = 311.2785459921138 
+            xmax = 317.8661454483534 
+            text = "AS HOLMES DREW THE CURTAIN I WAS AWARE FROM SOME LITTLE RIGIDITY AND ALERTNESS OF HIS ATTITUDE THAT HE WAS PREPARED FOR AN EMERGENCY" 
+        intervals [75]:
+            xmin = 317.8661454483534 
+            xmax = 320.28767875788594 
+            text = "IT WILL NOT BE MUCH BUT I AM GRATEFUL TO FIND A FRIEND" 
+        intervals [76]:
+            xmin = 320.28767875788594 
+            xmax = 324.9996232429914 
+            text = "HOLMES TURNED AWAY AND STOOPED SUDDENLY TO THE FLOOR HALLO WHAT'S THIS" 
+        intervals [77]:
+            xmin = 324.9996232429914 
+            xmax = 329.57382282864165 
+            text = "THEY LEFT HIM THEN FOR THE JAILER ARRIVED TO UNLOCK THE DOOR AND ESCORT THEM TO THE OFFICE" 
+        intervals [78]:
+            xmin = 329.57382282864165 
+            xmax = 333.27157717708513 
+            text = "HOLMES HELD IT OUT ON HIS OPEN PALM IN THE GLARE OF THE ELECTRIC LIGHT" 
+        intervals [79]:
+            xmin = 333.27157717708513 
+            xmax = 335.1651159699679 
+            text = " I HAVE SEEN LOTS OF THAT KIND IN MY DAY" 
+        intervals [80]:
+            xmin = 335.1651159699679 
+            xmax = 340.3017977956885 
+            text = "WHAT COULD HE DO HE CAUGHT UP EVERYTHING WHICH WOULD BETRAY HIM AND HE RUSHED INTO YOUR BEDROOM TO CONCEAL HIMSELF" 
+        intervals [81]:
+            xmin = 340.3017977956885 
+            xmax = 342.24541021996794 
+            text = "AND IT RUINS A MAN'S DISPOSITION" 
+        intervals [82]:
+            xmin = 342.24541021996794 
+            xmax = 349.2670772565468 
+            text = "I UNDERSTAND YOU TO SAY THAT THERE ARE THREE STUDENTS WHO USE THIS STAIR AND ARE IN THE HABIT OF PASSING YOUR DOOR YES THERE ARE" 
+        intervals [83]:
+            xmin = 349.2670772565468 
+            xmax = 352.61146844835343 
+            text = "HE LOOKED UP RATHER UNGRACIOUSLY BUT MOTIONED THEM TO BE SEATED" 
+        intervals [84]:
+            xmin = 352.61146844835343 
+            xmax = 355.85163203114024 
+            text = "AND THEY ARE ALL IN FOR THIS EXAMINATION YES " 
+        intervals [85]:
+            xmin = 355.85163203114024 
+            xmax = 360.43083725479164 
+            text = "SOME GIRL HAS BEEN HERE TWICE TO INTERVIEW MY MEN AND I HAVE REFUSED TO ADMIT HER" 
+        intervals [86]:
+            xmin = 360.43083725479164 
+            xmax = 363.4154036274823 
+            text = "ONE HARDLY LIKES TO THROW SUSPICION WHERE THERE ARE NO PROOFS" 
+        intervals [87]:
+            xmin = 363.4154036274823 
+            xmax = 365.2879310144906 
+            text = "I AM NOT ELECTIONEERING JUST NOW" 
+        intervals [88]:
+            xmin = 365.2879310144906 
+            xmax = 367.94093996500305 
+            text = "LET US HEAR THE SUSPICIONS I WILL LOOK AFTER THE PROOFS" 
+        intervals [89]:
+            xmin = 367.94093996500305 
+            xmax = 369.56545279095445 
+            text = "OH WELL SIR WHAT ABOUT HIM" 
+        intervals [90]:
+            xmin = 369.56545279095445 
+            xmax = 374.6051629987184 
+            text = "MY SCHOLAR HAS BEEN LEFT VERY POOR BUT HE IS HARD WORKING AND INDUSTRIOUS HE WILL DO WELL" 
+        intervals [91]:
+            xmin = 374.6051629987184 
+            xmax = 376.60123012064685 
+            text = "AND HE DESERVES A TERM IN STATE'S PRISON" 
+        intervals [92]:
+            xmin = 376.60123012064685 
+            xmax = 378.5478872265725 
+            text = "THE TOP FLOOR BELONGS TO MILES MC LAREN" 
+        intervals [93]:
+            xmin = 378.5478872265725 
+            xmax = 381.00262858944893 
+            text = "IT HAS COST ME TWICE SIXTY DOLLARS IN ANNOYANCE" 
+        intervals [94]:
+            xmin = 381.00262858944893 
+            xmax = 385.6626839229156 
+            text = "I DARE NOT GO SO FAR AS THAT BUT OF THE THREE HE IS PERHAPS THE LEAST UNLIKELY" 
+        intervals [95]:
+            xmin = 385.6626839229156 
+            xmax = 387.367916452736 
+            text = "I WILL PAY ALL THE COSTS BESIDES " 
+        intervals [96]:
+            xmin = 387.367916452736 
+            xmax = 391.02063793507534 
+            text = "HE WAS STILL SUFFERING FROM THIS SUDDEN DISTURBANCE OF THE QUIET ROUTINE OF HIS LIFE" 
+        intervals [97]:
+            xmin = 391.02063793507534 
+            xmax = 393.08116374761147 
+            text = "YOU'RE FOOLISH WHY SHOULD YOU DO ALL THIS" 
+        intervals [98]:
+            xmin = 393.08116374761147 
+            xmax = 395.82948543985236 
+            text = "BUT I HAVE OCCASIONALLY DONE THE SAME THING AT OTHER TIMES" 
+        intervals [99]:
+            xmin = 395.82948543985236 
+            xmax = 397.86362232317606 
+            text = "I HAVE MY OWN REASONS MISTER MARSHALL" 
+        intervals [100]:
+            xmin = 397.86362232317606 
+            xmax = 399.92266844723514 
+            text = "DID YOU LOOK AT THESE PAPERS ON THE TABLE" 
+        intervals [101]:
+            xmin = 399.92266844723514 
+            xmax = 405.97831144332656 
+            text = "GIVE ME A CHECK FOR A HUNDRED AND FIFTY AND I'LL TURN OVER TO YOU THE FORGED CHECK AND QUASH FURTHER PROCEEDINGS" 
+        intervals [102]:
+            xmin = 405.97831144332656 
+            xmax = 407.75748367827157 
+            text = "HOW CAME YOU TO LEAVE THE KEY IN THE DOOR" 
+        intervals [103]:
+            xmin = 407.75748367827157 
+            xmax = 407.94187586848585 
+            text = "" 
+        intervals [104]:
+            xmin = 407.94187586848585 
+            xmax = 415.1041998201361 
+            text = "HE DETESTED THE GRASPING DISPOSITION THAT WOULD ENDEAVOR TO TAKE ADVANTAGE OF HIS EVIDENT DESIRE TO HELP YOUNG GATES " 
+        intervals [105]:
+            xmin = 415.1041998201361 
+            xmax = 418.1345580866387 
+            text = "ANYONE IN THE ROOM COULD GET OUT YES SIR" 
+        intervals [106]:
+            xmin = 418.1345580866387 
+            xmax = 420.22604986964393 
+            text = "BETH UNEASY AT HIS SILENCE NUDGED HIM" 
+        intervals [107]:
+            xmin = 420.22604986964393 
+            xmax = 422.7899793716706 
+            text = " I REALLY DON'T THINK HE KNEW MUCH ABOUT IT MISTER HOLMES" 
+        intervals [108]:
+            xmin = 422.7899793716706 
+            xmax = 425.80315122922707 
+            text = "THERE WAS A GRIM SMILE OF AMUSEMENT ON HIS SHREWD FACE" 
+        intervals [109]:
+            xmin = 425.80315122922707 
+            xmax = 427.15975091437474 
+            text = "ONLY FOR A MINUTE OR SO" 
+        intervals [110]:
+            xmin = 427.15975091437474 
+            xmax = 427.46268094115527 
+            text = "" 
+        intervals [111]:
+            xmin = 427.46268094115527 
+            xmax = 431.40668770577594 
+            text = "HE MIGHT HAVE HAD THAT FORGED CHECK FOR THE FACE OF IT IF HE'D BEEN SHARP" 
+        intervals [112]:
+            xmin = 431.40668770577594 
+            xmax = 433.9456612793138 
+            text = "OH I WOULD NOT VENTURE TO SAY " 
+        intervals [113]:
+            xmin = 433.9456612793138 
+            xmax = 434.3232262402287 
+            text = "" 
+        intervals [114]:
+            xmin = 434.3232262402287 
+            xmax = 440.216569060582 
+            text = "TO THINK WE CAN SAVE ALL THAT MISERY AND DESPAIR BY THE PAYMENT OF A HUNDRED AND FIFTY DOLLARS" 
+        intervals [115]:
+            xmin = 440.216569060582 
+            xmax = 443.5789224460771 
+            text = "YOU HAVE NOT SEEN ANY OF THEM NO SIR" 
+        intervals [116]:
+            xmin = 443.5789224460771 
+            xmax = 500 
+            text = "" 
